@@ -4,6 +4,8 @@ FROM node:6
 RUN mkdir /app
 COPY . /app
 
-RUN cd /app && npm install && npm start
+RUN cd /app; npm install
 
 EXPOSE 8888
+
+CMD cd /app && node ./index.js
