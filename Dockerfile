@@ -2,7 +2,7 @@
 FROM node:6
 
 RUN mkdir /app
-WORKDIR /app
+COPY . /app
 
 RUN cd /app && npm install && npm start
 
