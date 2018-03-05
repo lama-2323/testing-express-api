@@ -6,6 +6,6 @@ COPY . /app
 
 RUN cd /app; npm install
 
-EXPOSE 8888
+EXPOSE 3000
 
 CMD cd /app && node ./index.js
